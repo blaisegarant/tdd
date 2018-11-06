@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import WebDriverException
 import time
 
-MAX_WAIT = 500
+MAX_WAIT = 10
 
 # todo Adjust model so that items are associated with different lists
 # todo Add unique URLs for each list
@@ -31,6 +31,7 @@ class NewVisitorTest(LiveServerTestCase):
             except (AssertionError, WebDriverException) as e:
                 if time.time() - start_time > MAX_WAIT:
                     raise e
+
                 time.sleep(0.01)
 
     def test_can_start_a_list_for_one_user(self):
