@@ -3,7 +3,7 @@ from django.test import TestCase
 from lists.models import Item
 
 
-# todo Support more than one list!
+
 
 
 class HomePageTest(TestCase):
