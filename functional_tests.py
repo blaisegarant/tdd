@@ -3,6 +3,9 @@ from selenium.webdriver.common.keys import Keys
 import unittest
 import time
 
+# todo Clean up after FT runs
+# todo Remove time.sleeps
+
 
 class NewVisitorTest(unittest.TestCase):
 
