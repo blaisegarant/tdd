@@ -6,10 +6,6 @@ import time
 
 MAX_WAIT = 10
 
-# todo Adjust model so that items are associated with different lists
-# todo Add unique URLs for each list
-# todo Add URLs for adding a new item to an existing list via POST
-
 
 class NewVisitorTest(LiveServerTestCase):
 
